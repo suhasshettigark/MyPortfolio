@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Software Engineer Portfolio</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+    </head>
+    <body>
+        <nav>
+            <a href="https://suhask.com/" class="logo">S</a>
+            <div class="nav-right">
+                <div class="nav-links">
+                    <a href="#about"
+                        ><span class="text-accent">01.</span> About</a
+                    >
+                    <a href="#skills"
+                        ><span class="text-accent">02.</span> Skills</a
+                    >
+                    <a href="#experience"
+                        ><span class="text-accent">03.</span> Exp</a
+                    >
+                    <a href="#education"
+                        ><span class="text-accent">04.</span> Edu</a
+                    >
+                    <a href="#work"
+                        ><span class="text-accent">05.</span> Work</a
+                    >
+                    <a href="#certifications"
+                        ><span class="text-accent">06.</span> Certs</a
+                    >
+                    <a href="#contact"
+                        ><span class="text-accent">07.</span> Contact</a
+                    >
+                    <a
+                        href="assets/resume.pdf"
+                        target="_blank"
+                        class="resume-btn"
+                        >Resume</a
+                    >
+                </div>
+                <button
+                    id="theme-toggle"
+                    class="theme-toggle"
+                    aria-label="Toggle Dark/Light Mode"
+                >
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </div>
+        </nav>
+        <div class="container">
+            <section class="hero fade-in">
+                <h4>Hi, my name is</h4>
+                <h1>Suhas Shettigar K.</h1>
+                <h2>I build things for the web.</h2>
+                <p>
+                    I'm a software engineer specializing in building (and
+                    occasionally designing) exceptional digital experiences.
+                    Currently, I'm focused on building accessible,
+                    human-centered products.
+                </p>
+                <div class="social">
+                    <a
+                        href="https://www.github.com/suhasshettigark/"
+                        target="_blank"
+                        class="social-icon"
+                        rel="noopener noreferrer"
+                        title="GitHub"
+                        ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/suhas-shettigar-k/"
+                        target="_blank"
+                        class="social-icon"
+                        rel="noopener noreferrer"
+                        title="LinkedIn"
+                        ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                    <a
+                        href="https://www.x.com/SuhasShettigarK"
+                        target="_blank"
+                        class="social-icon"
+                        rel="noopener noreferrer"
+                        title="Twitter"
+                        ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a
+                        href="https://www.leetcode.com/u/suhasshettigark/"
+                        target="_blank"
+                        class="social-icon"
+                        rel="noopener noreferrer"
+                        title="LeetCode"
+                        ><i class="fa-solid fa-code"></i
+                    ></a>
+                    <a
+                        href="https://www.hackerrank.com/profile/suhasshettigark/"
+                        target="_blank"
+                        class="social-icon"
+                        rel="noopener noreferrer"
+                        title="HackerRank"
+                    >
+                        <i class="fa-brands fa-hackerrank"></i>
+                    </a>
+                    <!--<a
+                        href="https://www.hackerearth.com/@suhasshettigark/"
+                        target="_blank"
+                        class="social-icon"
+                        rel="noopener noreferrer"
+                        title="HackerEarth"
+                        ><i class="fa-solid fa-layer-group"></i>-->
+                    </a>
+                    <!--<a
+                        href="https://www.medium.com/@suhasshettigark/"
+                        target="_blank"
+                        class="social-icon"
+                        rel="noopener noreferrer"
+                        title="Medium"
+                        ><i class="fa-brands fa-medium"></i
+                    ></a>-->
+                </div>
+            </section>
+            <section id="about" class="section fade-in">
+                <div class="section-header">
+                    <h2><span class="text-accent">01.</span> About Me</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Hello! My name is Suhas and I enjoy creating things
+                            that live on the internet. My interest in web
+                            development started back in 2012 when I decided to
+                            try editing custom Tumblr themes — turns out hacking
+                            together HTML & CSS taught me a lot!
+                        </p>
+                        <p>
+                            Fast-forward to today, and I've had the privilege of
+                            working at an
+                            <span class="text-accent">advertising agency</span>,
+                            a <span class="text-accent">start-up</span>, and a
+                            <span class="text-accent">huge corporation</span>.
+                        </p>
+                        <p>
+                            When I'm not coding, you can usually find me reading
+                            sci-fi novels, hiking, or playing video games.
+                        </p>
+                    </div>
+                    <div class="profile-pic-wrapper">
+                        <img
+                            src="assets/me.jpg"
+                            alt="Profile"
+                            class="profile-pic"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section id="skills" class="section fade-in">
+                <div class="section-header">
+                    <h2>
+                        <span class="text-accent">02.</span> Technical Skills
+                    </h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend Development</h3>
+                        <ul class="skill-list">
+                            <li>React.js / Next.js</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>TypeScript</li>
+                            <li>HTML5 & CSS3</li>
+                            <li>Tailwind CSS</li>
+                            <li>Redux Toolkit</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend & Database</h3>
+                        <ul class="skill-list">
+                            <li>Node.js / Express</li>
+                            <li>Python / Django</li>
+                            <li>PostgreSQL</li>
+                            <li>MongoDB</li>
+                            <li>GraphQL</li>
+                            <li>Firebase</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & DevOps</h3>
+                        <ul class="skill-list">
+                            <li>Git & GitHub</li>
+                            <li>Docker / Kubernetes</li>
+                            <li>AWS (S3, EC2)</li>
+                            <li>CI/CD Pipelines</li>
+                            <li>Jest / Testing Library</li>
+                            <li>Linux / Bash</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="experience" class="section fade-in">
+                <div class="section-header">
+                    <h2>
+                        <span class="text-accent">03.</span> Where I've Worked
+                    </h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>
+                                Junior Support Engineer
+                                <span class="text-accent">@ UnifyCX</span>
+                            </h3>
+                            <span>July 2024 - Present</span>
+                        </div>
+                        <div class="timeline-content">
+                            <ul>
+                                <li>
+                                    Write modern, performant, maintainable code
+                                    for a diverse array of client and internal
+                                    projects.
+                                </li>
+                                <li>
+                                    Work with a variety of different languages,
+                                    frameworks, and content management systems.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="education" class="section fade-in">
+                <div class="section-header">
+                    <h2><span class="text-accent">04.</span> Education</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>
+                                Bachelor of Engineering (B.E.)
+                                <span class="text-accent"
+                                    >@ Sahyadri College Of Engineering &
+                                    Management
+                                </span>
+                            </h3>
+                            <span>2020 - 2024</span>
+                        </div>
+                        <div class="edu-details">
+                            <p><strong>CGPA:</strong> 7.67 / 10</p>
+                            <p>
+                                Specialized in Information Science & Engineering
+                                (ISE)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>
+                                Higher Secondary (12th)
+                                <span class="text-accent"
+                                    >@ Vikas PU College</span
+                                >
+                            </h3>
+                            <span>2018 - 2019</span>
+                        </div>
+                        <div class="edu-details">
+                            <p><strong>Percentage:</strong> 76.33%</p>
+                            <p>
+                                Stream: Science (Physics, Chemistry, Math,
+                                Computer Science)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>
+                                Secondary School (10th)
+                                <span class="text-accent"
+                                    >@ Shubhodaya Vidyalaya</span
+                                >
+                            </h3>
+                            <span>2016 - 2017</span>
+                        </div>
+                        <div class="edu-details">
+                            <p><strong>Percentage:</strong> 74%</p>
+                            <p>Board: CBSE</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="work" class="section fade-in">
+                <div class="section-header">
+                    <h2>
+                        <span class="text-accent">05.</span> Some Things I've
+                        Built
+                    </h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="card-header">
+                            <i class="fa-regular fa-folder folder-icon"></i>
+                            <div class="project-links">
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    aria-label="GitHub Link"
+                                    ><i class="fa-brands fa-github"></i
+                                ></a>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    aria-label="External Link"
+                                    ><i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                    ></i
+                                ></a>
+                            </div>
+                        </div>
+                        <h3>Algorithmic Trading Bot</h3>
+                        <p>
+                            A Python script that trades crypto automatically
+                            based on moving averages. Integrated with Binance
+                            API.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Docker</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-header">
+                            <i class="fa-regular fa-folder folder-icon"></i>
+                            <div class="project-links">
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    aria-label="GitHub Link"
+                                    ><i class="fa-brands fa-github"></i
+                                ></a>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    aria-label="External Link"
+                                    ><i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                    ></i
+                                ></a>
+                            </div>
+                        </div>
+                        <h3>Halcyon Theme</h3>
+                        <p>
+                            A minimal, dark blue theme for VS Code, Sublime
+                            Text, Atom, iTerm, and more.
+                        </p>
+                        <div class="project-tech">
+                            <span>VS Code</span>
+                            <span>JSON</span>
+                            <span>Design</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-header">
+                            <i class="fa-regular fa-folder folder-icon"></i>
+                            <div class="project-links">
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    aria-label="GitHub Link"
+                                    ><i class="fa-brands fa-github"></i
+                                ></a>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    aria-label="External Link"
+                                    ><i
+                                        class="fa-solid fa-arrow-up-right-from-square"
+                                    ></i
+                                ></a>
+                            </div>
+                        </div>
+                        <h3>Chat App</h3>
+                        <p>
+                            Real-time chat application using websockets.
+                            Features include private rooms and image sharing.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Socket.io</span>
+                            <span>Express</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="certifications" class="section fade-in">
+                <div class="section-header">
+                    <h2><span class="text-accent">06.</span> Certifications</h2>
+                </div>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-logo">
+                            <img
+                                src="assets/coursera.svg"
+                                alt="assets/Coursera"
+                            />
+                        </div>
+                        <div class="cert-info">
+                            <h3>Google Cybersecurity</h3>
+                            <p>Issued by Coursera</p>
+                            <a
+                                href="assets/gcbs.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="cert-link"
+                                >View Credential
+                                <i class="fa-solid fa-arrow-right"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-logo">
+                            <img src="assets/udemy.svg" alt="assets/Udemy" />
+                        </div>
+                        <div class="cert-info">
+                            <h3>Devops Fundamentals</h3>
+                            <p>Issued by Udemy</p>
+                            <a
+                                href="assets/gcbs.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="cert-link"
+                                >View Credential
+                                <i class="fa-solid fa-arrow-right"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-logo">
+                            <img src="assets/oracle.svg" alt="assets/Oracle" />
+                        </div>
+                        <div class="cert-info">
+                            <h3>OCI - DevOps Professional</h3>
+                            <p>Issued by Oracle</p>
+                            <a
+                                href="assets/odo.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="cert-link"
+                                >View Credential
+                                <i class="fa-solid fa-arrow-right"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-logo">
+                            <img src="assets/oracle.svg" alt="assets/Oracle" />
+                        </div>
+                        <div class="cert-info">
+                            <h3>OCI - Networking Professional</h3>
+                            <p>Issued by Oracle</p>
+                            <a
+                                href="assets/on.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="cert-link"
+                                >View Credential
+                                <i class="fa-solid fa-arrow-right"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <img
+                                class="theme-img cert-logo"
+                                src="assets/nptel-dark.png"
+                                data-dark="assets/nptel-dark.png"
+                                data-light="assets/nptel-light.png"
+                                alt="NPTEL Cloud Computing"
+                            />
+                        </div>
+                        <div class="cert-info">
+                            <h3>Computer Networks and Internet Protocol</h3>
+                            <p>Issued by NPTEL (IIT Kharagpur)</p>
+                            <a
+                                href="assets/cnip.jpg"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="cert-link"
+                                >View Credential
+                                <i class="fa-solid fa-arrow-right"></i
+                            ></a>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <img
+                                class="theme-img cert-logo"
+                                src="assets/nptel-dark.png"
+                                data-dark="assets/nptel-dark.png"
+                                data-light="assets/nptel-light.png"
+                                alt="NPTEL DSA"
+                            />
+                        </div>
+                        <div class="cert-info">
+                            <h3>Data Base Management System</h3>
+                            <p>Issued by NPTEL (IIT Kharagpur)</p>
+                            <a
+                                href="assets/dbms.jpg"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="cert-link"
+                                >View Credential
+                                <i class="fa-solid fa-arrow-right"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="section contact fade-in">
+                <h4 class="text-accent">07. What’s Next?</h4>
+                <h2>Get In Touch</h2>
+                <p>
+                    I am currently looking for new opportunities. Whether you
+                    have a question or just want to say hi, I’ll try my best to
+                    get back to you!
+                </p>
+                <a href="mailto:email@suhask.com" class="contact-email">
+                    <i class="fa-regular fa-envelope"></i>
+                    email@suhask.com
+                </a>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input
+                            type="text"
+                            name="from_name"
+                            placeholder="Name"
+                            required
+                        />
+                        <input
+                            type="email"
+                            name="user_email"
+                            placeholder="Email"
+                            required
+                        />
+                    </div>
+                    <input
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                        required
+                    />
+                    <textarea
+                        name="message"
+                        placeholder="Message"
+                        required
+                    ></textarea>
+                    <button type="submit" class="cta-btn" id="submit-btn">
+                        Send Message
+                    </button>
+                </form>
+            </section>
+            <footer>
+                <p>Designed & Built by Suhas Shettigar K</p>
+                <div class="footer-links">
+                    <a
+                        href="https://www.github.com/suhasshettigark/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="GitHub"
+                        ><i class="fa-brands fa-github"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/suhas-shettigar-k/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="LinkedIn"
+                        ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                    <a
+                        href="https://www.x.com/SuhasShettigarK"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Twitter"
+                        ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                    <a
+                        href="https://www.leetcode.com/u/suhasshettigark/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="LeetCode"
+                        ><i class="fa-solid fa-code"></i
+                    ></a>
+                    <a
+                        href="https://www.hackerrank.com/profile/suhasshettigark/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="HackerRank"
+                    >
+                        <i class="fa-brands fa-hackerrank"></i>
+                    </a>
+                    <!--<a
+                        href="https://www.hackerearth.com/@suhasshettigark/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="HackerEarth"
+                        ><i class="fa-solid fa-layer-group"></i>
+                    </a>-->
+                    <!--<a
+                        href="https://www.medium.com/@suhasshettigark/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="Medium"
+                        ><i class="fa-brands fa-medium"></i
+                    ></a>-->
+                </div>
+            </footer>
+        </div>
+        <script src="config.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
